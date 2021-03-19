@@ -12,7 +12,6 @@
 
 * BFS can also work on connected and disconnected graph.<br>
  
- ggg
  - - - -
 
 ![](images/1.png)<br>
