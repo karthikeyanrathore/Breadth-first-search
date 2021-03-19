@@ -38,22 +38,21 @@ The idea of bfs is very similar to level order traversal, we just must print all
 ## Implementation
 ```C++
 void bfs(vector<int>edges[] , int v , int s){
-	vector<bool> vis(v + 1 , false);
-	queue<int> q;
-	vis[s] = true;
-	q.push(s);
-	
-	while(!q.empty()){
-		int u = q.front();
-		q.pop();
-		cout << u << “ ”;
-		
-		for(int x : edges[u])
-			if(!vis[x]){
-				vis[x] = true;
-				q.push(x);
-		}
+  vector<bool> vis(v + 1 , false);
+  queue<int> q;
+  vis[s] = true;
+  q.push(s);
+
+  while(!q.empty()){
+    int u = q.front();
+    q.pop();
+    cout << u << “ ”;	
+    for(int x : edges[u])
+	if(!vis[x]){
+	  vis[x] = true;
+	  q.push(x);
 	}
+    }
 }
 ```		
 	
