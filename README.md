@@ -1,1 +1,2 @@
-## Introduction
+## Introduction 
+#foo {color: red}
