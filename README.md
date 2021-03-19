@@ -29,6 +29,7 @@
 * Suppose we have an undirected non-cyclic graph(fig-a), and a source vertex is given as input. Our task to do bfs from the source vertex. 
 
 * The procedure of Breadth first search algorithm is as follows: 
+
 1. create a queue 
 2.  Boolean dynamic array visited for each vertex, which will indicate that the vertex is visited or not, as applying bfs on a cyclic graph we may visit the    2. same vertex    twice if we do not use visited array. In the beginning the visited array is initialized as false.
 
