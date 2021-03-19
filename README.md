@@ -10,7 +10,7 @@
 
 * BFS can also work on connected and disconnected graph.<br>
 
-![alt text](https://github.com/karthikeyanrathore/Breadth-first-search/blob/main/Images/Screenshot%20(81).png) <br>
+<img src="https://github.com/karthikeyanrathore/Breadth-first-search/blob/main/Images/Screenshot%20(81).png" alt="hi" class="inline"/><br>
 **Fig-example(a)**
 
 Let Us see the Fig-Example(a), we are given an unweighted graph which is non-cyclic and a source vertex 0. Our task is to bfs from the source vertex 0.
