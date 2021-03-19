@@ -1,4 +1,5 @@
-<span style="font-family: 'Lucida Console';">
+<link rel="stylesheet" type="text/css" media="all" href="markdown_styles.css" />
+
 
 ## Introduction 
 
@@ -63,5 +64,5 @@ void bfs(vector<int>edges[] , int v , int s){
 	
 ## Time Complexity
 
-</span>
+
 
