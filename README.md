@@ -9,7 +9,7 @@
 * Breadth First Search Algorithm takes an unweighted graph as an input and a source vertex. Source Vertex is the vertex from where the bfs algorithm first starts and the unweighted graph can be either undirected or directed graph.<br>
 
 * BFS can also work on connected and disconnected graph.<br>
-
+ ****
 
 ![](images/1.png)<br>
 **Fig-example(a)**
