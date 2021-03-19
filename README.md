@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="s.css" type="text/css">
+
 ## Introduction 
 
 * Breath First Search Algorithm is a fundamental search algorithm, which is used to explore vertices and edges of a graph. It is often used as a building block in other algorithms.
@@ -10,6 +12,7 @@
 
 * BFS can also work on connected and disconnected graph.<br>
  
+ ggg
  - - - -
 
 ![](images/1.png)<br>
