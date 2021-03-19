@@ -13,9 +13,21 @@
 
 ![](images/1.png)<br>
 **Fig-example(a)**
-
-
 Let Us see the Fig-Example(a), we are given an unweighted graph which is non-cyclic and a source vertex 0. Our task is to bfs from the source vertex 0.
 In breadth First Search Algorithm, first we will print the source vertex 0 in the output screen and then its neighbors that is 1 and 2. Now we will print the neighbors of 1 and 2. As you can see, 1 do not have any neighbors (zero), so we will not print anything in the output screen, but 2 have neighbors 3 and 4, so will print it. Now the final output is 0 1 2 3 4, it can also be written as 0 2 1 4 3 or 0 1 2 4 3. The idea of bfs is very similar to level order traversal, we just must print all vertices in a level order format. In 
 the fig-example(a), the vertex 0 is at zero level, vertex 1 and 2 is at first level and vertex 3 and 4 is at second level.
+
+
+## Idea and procedure
+* Suppose we have an undirected non-cyclic graph(fig-a), and a source vertex is given as input. Our task to do bfs from the source vertex. 
+
+* The procedure of Breadth first search algorithm is as follows: create a queue and Boolean dynamic array visited for each vertex, which will indicate that the vertex is visited or not, as applying bfs on a cyclic graph we may visit the same vertex twice if we do not use visited array. In the beginning the visited array is initialized as false.
+
+* Initially we will enqueue the source vertex 0 in the queue (Q) and we will mark the 0 vertex as visited which is True. Now a loop will be running until the queue is empty. In the loop, we will first dequeue 0 from the queue(Q), print it on the output screen and then iterate over all the neighbors of 0 that is 1 and 2. If any of the neighbor of 0 is visited, we will not enqueue it, but if it not visited, we will enqueue it. As 1 and 2 are not visited we will enqueue it into the queue(Q) and mark 1 and 2 as visited.
+
+* After first iteration, now we will dequeue the front of the queue that is 1, print it on the output screen and iterate over all the neighbors of 1. As in this case 1 do not have any neighbors, so we will not enqueue anything. In the third iteration, we will dequeue 2, print it on the output screen and iterate over all the neighbors of 2 that is 3 and 4. Both 3 and 4 are not visited so we will enqueue it into the queue (Q) and mark it as visited. 
+
+* In the fourth iteration, we will dequeue 3, print it on the screen and as in the graph 3 do not have neighbors so will not enqueue anything. In the Fifth iteration, we will dequeue 4 , print it on the screen and as 4 also do not have any neighbors we will enqueue anything. Now our program will stop as the queue is empty. The output screen is 0 1 2 3 4.
+
+* In each iteration, we are iterating through all the adjacency list of each vertex and if any vertex in the adjacency list is not visited , we will enqueue it into the queue(Q) and mark it as visited , as we do not want visit the same vertex twice.
 
