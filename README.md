@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="s.css" type="text/css">
-
+<span style="font-family: 'Lucida Console';">foo</span>
 ## Introduction 
 
 * Breath First Search Algorithm is a fundamental search algorithm, which is used to explore vertices and edges of a graph. It is often used as a building block in other algorithms.
