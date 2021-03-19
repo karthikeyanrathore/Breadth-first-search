@@ -64,6 +64,6 @@ void bfs(vector<int>edges[] , int v , int s){
 ```		
 	
 ## Time Complexity
-![](images/2.png)<br>
+
 
 
