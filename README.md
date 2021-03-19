@@ -13,7 +13,7 @@
  - - - -
 
 ![](images/1.png)<br>
-**Fig-example(a)**
+**Fig-Example(a)**
 <br>
 > Let Us see the Fig-Example(a), we are given an unweighted graph which is non-cyclic and a source vertex 0. Our task is to bfs from the source vertex 0.<br>
 
