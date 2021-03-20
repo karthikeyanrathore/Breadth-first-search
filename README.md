@@ -35,13 +35,17 @@
 1. create a queue 
 2.  Boolean dynamic array visited for each vertex, which will indicate that the vertex is visited or not, as applying bfs on a cyclic graph we may visit the    2. same vertex    twice if we do not use visited array. In the beginning the visited array is initialized as false.
 
-3. Initially we will enqueue the source vertex 0 in the queue (Q) and we will mark the 0 vertex as visited which is True. Now a loop will be running until the queue is empty. In the loop, we will first dequeue 0 from the queue(Q), print it on the output screen and then iterate over all the neighbors of 0 that is 1 and 2. If any of the neighbor of 0 is visited, we will not enqueue it, but if it not visited, we will enqueue it. As 1 and 2 are not visited we will enqueue it into the queue(Q) and mark 1 and 2 as visited.
+3. Initially we will enqueue the source vertex 0 in the queue (Q) and we will mark the 0 vertex as visited which is True. Now a loop will be running until the queue is empty. 
 
-4. After first iteration, now we will dequeue the front of the queue that is 1, print it on the output screen and iterate over all the neighbors of 1. As in this case 1 do not have any neighbors, so we will not enqueue anything. In the third iteration, we will dequeue 2, print it on the output screen and iterate over all the neighbors of 2 that is 3 and 4. Both 3 and 4 are not visited so we will enqueue it into the queue (Q) and mark it as visited. 
+4. In the loop, we will first dequeue 0 from the queue(Q), print it on the output screen and then iterate over all the neighbors of 0 that is 1 and 2. If any of the neighbor of 0 is visited, we will not enqueue it, but if it not visited, we will enqueue it. As 1 and 2 are not visited we will enqueue it into the queue(Q) and mark 1 and 2 as visited.
 
-5. In the fourth iteration, we will dequeue 3, print it on the screen and as in the graph 3 do not have neighbors so will not enqueue anything. In the Fifth iteration, we will dequeue 4 , print it on the screen and as 4 also do not have any neighbors we will enqueue anything. Now our program will stop as the queue is empty. The output screen is 0 1 2 3 4.
+5. After first iteration, now we will dequeue the front of the queue that is 1, print it on the output screen and iterate over all the neighbors of 1. As in this case 1 do not have any neighbors, so we will not enqueue anything. 
 
-6. In each iteration, we are iterating through all the adjacency list of each vertex and if any vertex in the adjacency list is not visited , we will enqueue it into the queue(Q) and mark it as visited , as we do not want visit the same vertex twice.
+6. In the third iteration, we will dequeue 2, print it on the output screen and iterate over all the neighbors of 2 that is 3 and 4. Both 3 and 4 are not visited so we will enqueue it into the queue (Q) and mark it as visited. 
+
+7. In the fourth iteration, we will dequeue 3, print it on the screen and as in the graph 3 do not have neighbors so will not enqueue anything. In the Fifth iteration, we will dequeue 4 , print it on the screen and as 4 also do not have any neighbors we will enqueue anything. Now our program will stop as the queue is empty. The output screen is 0 1 2 3 4.
+
+8. In each iteration, we are iterating through all the adjacency list of each vertex and if any vertex in the adjacency list is not visited , we will enqueue it into the queue(Q) and mark it as visited , as we do not want visit the same vertex twice.
 
 
 ## Implementation
