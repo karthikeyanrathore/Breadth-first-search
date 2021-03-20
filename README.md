@@ -7,7 +7,7 @@
 
 * BFS is particularly useful for one thing that is finding the shortest path on an unweighted graph. <br>
 
-* BFS Algorithm runs in O (V + E), where V is the number of vertices and E is the number of edges.<br>
+* BFS Algorithm runs in **O (V + E)**, where V is the number of vertices and E is the number of edges.<br>
 
 * Breadth First Search Algorithm takes an unweighted graph as an input and a source vertex. Source Vertex is the vertex from where the bfs algorithm first starts and the unweighted graph can be either undirected or directed graph.<br>
 
@@ -86,8 +86,8 @@ void bfs(vector<int>edges[] , int v , int s){
 
 
 In the code above, in the inner most loop where we are traversing all the adjacency list of each node. So, If we find out the sum of length of all adjacency list, then we know the time complexity of breadth first search.
-1. As we know that the Sum of length of all adjacency list is twice the no. of edges in an undirected graph.
-2. We also know the Sum of length of all adjacency lists is equal to the no. of edges in a directed graph.
+1. **As we know that the Sum of length of all adjacency list is twice the no. of edges in an undirected graph.**
+2. **We also know the Sum of length of all adjacency lists is equal to the no. of edges in a directed graph.**
 
 ------
 ### Proof of Statement 1
