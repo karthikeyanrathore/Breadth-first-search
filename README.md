@@ -73,7 +73,7 @@ void bfs(vector<int>edges[] , int v , int s){
   ...
   while(!q.empty()){
    
-    for(int x : edges[u])
+    for(int x : edges[u]) // inner most loop
 	if(!vis[x]){
 	  vis[x] = true;
 	  q.push(x);
