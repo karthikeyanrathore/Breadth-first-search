@@ -94,6 +94,7 @@ void bfs(vector<int>edges[] , int v , int s){
 
 
 In the code above, in the inner most loop where we are traversing all the adjacency list of each node. So, If we find out the sum of length of all adjacency list, then we know the time complexity of breadth first search.<br>
+
 **1. As we know that the Sum of length of all adjacency list is twice the no. of edges in an undirected graph.**<br>
 **2. We also know the Sum of length of all adjacency lists is equal to the no. of edges in a directed graph.**
 
