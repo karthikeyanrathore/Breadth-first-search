@@ -97,7 +97,8 @@ So first we will find out the sum of length of all adjacency list.
 1. As there is 3 elements (1  , 2 , 3) in the adjacency list of 0 , so length is 3.
 2. As there is 2 elements (0 , 3) in the adjacency list of 1 , so length is 2.
 3. As there is 3 elements (0 , 1 , 2) in the adjacency list of 3 , so length is 3.
-4. As there is 2 elements (0 , 3) in the adjacency list of 2 , so length is 2
+4. As there is 2 elements (0 , 3) in the adjacency list of 2 , so length is 2.<br>
+
 The total sum is 10 and there are 5 edges in the undirected graph. So hence proved that sum of all adjacency list is equal to twice the no. of edges in the undirected graph.
 
 ------
