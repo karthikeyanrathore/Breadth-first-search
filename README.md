@@ -49,7 +49,7 @@
 
 8.  *In the Fifth iteration, we will dequeue 4 , print it on the screen and as 4 also do not have any neighbors we will enqueue anything. Now our program will stop as the queue is empty. The output screen is 0 1 2 3 4.*
 
-* *In each iteration, we are iterating through all the adjacency list of each vertex and if any vertex in the adjacency list is not visited , we will enqueue it into the queue(Q) and mark it as visited , as we do not want visit the same vertex twice.*
+* In each iteration, we are iterating through all the adjacency list of each vertex and if any vertex in the adjacency list is not visited , we will enqueue it into the queue(Q) and mark it as visited , as we do not want visit the same vertex twice.
 
 
 ## Implementation
