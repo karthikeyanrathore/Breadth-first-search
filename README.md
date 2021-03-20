@@ -20,7 +20,9 @@
 <br>
 > Let Us see the Fig-Example(a), we are given an unweighted graph which is non-cyclic and a source vertex 0. Our task is to bfs from the source vertex 0.<br>
 
-> In breadth First Search Algorithm, first we will print the source vertex 0 in the output screen and then its neighbors that is 1 and 2. Now we will print the neighbors of 1 and 2. As you can see, 1 do not have any neighbors (zero), so we will not print anything in the output screen, but 2 have neighbors 3 and 4, so will print it.
+> In breadth First Search Algorithm, first we will print the source vertex 0 in the output screen and then its neighbors that is 1 and 2. 
+
+> Now we will print the neighbors of 1 and 2. As you can see, 1 do not have any neighbors (zero), so we will not print anything in the output screen, but 2 have neighbors 3 and 4, so will print it.
 
 >  Now the final output is 0 1 2 3 4, it can also be written as 0 2 1 4 3 or 0 1 2 4 3. <br>
 
@@ -43,7 +45,9 @@
 
 6. In the third iteration, we will dequeue 2, print it on the output screen and iterate over all the neighbors of 2 that is 3 and 4. Both 3 and 4 are not visited so we will enqueue it into the queue (Q) and mark it as visited. 
 
-7. In the fourth iteration, we will dequeue 3, print it on the screen and as in the graph 3 do not have neighbors so will not enqueue anything. In the Fifth iteration, we will dequeue 4 , print it on the screen and as 4 also do not have any neighbors we will enqueue anything. Now our program will stop as the queue is empty. The output screen is 0 1 2 3 4.
+7. In the fourth iteration, we will dequeue 3, print it on the screen and as in the graph 3 do not have neighbors so will not enqueue anything.
+
+8.  In the Fifth iteration, we will dequeue 4 , print it on the screen and as 4 also do not have any neighbors we will enqueue anything. Now our program will stop as the queue is empty. The output screen is 0 1 2 3 4.
 
 * In each iteration, we are iterating through all the adjacency list of each vertex and if any vertex in the adjacency list is not visited , we will enqueue it into the queue(Q) and mark it as visited , as we do not want visit the same vertex twice.
 
