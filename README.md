@@ -65,5 +65,62 @@ void bfs(vector<int>edges[] , int v , int s){
 	
 ## Time Complexity
 
+The Time complexity of breath first search algorithm is O( V + E) , where v is the no. of vertices and E is the no. of edges. 
+```C++
+void bfs(vector<int>edges[] , int v , int s){
+  vector<bool> vis(v + 1 , false);
+  .
+  ...
+  while(!q.empty()){
+   
+    for(int x : edges[u])
+	if(!vis[x]){
+	  vis[x] = true;
+	  q.push(x);
+	}
+    }
+}
+```	
+
+
+In the code above, in the inner most loop where we are traversing all the adjacency list of each node. So, If we find out the sum of length of all adjacency list, then we know the time complexity of breadth first search.
+1. As we know that the Sum of length of all adjacency list is twice the no. of edges in an undirected graph.
+2. We also know the Sum of length of all adjacency lists is equal to the no. of edges in a directed graph.
+
+------
+### Proof of Statement 1
+![](images/3.png)<br>
+Let us see the above undirected cyclic graph example to understand statement 1.
+
+
+So first we will find out the sum of length of all adjacency list.
+1. As there is 3 elements (1  , 2 , 3) in the adjacency list of 0 , so length is 3.
+2. As there is 2 elements (0 , 3) in the adjacency list of 1 , so length is 2.
+3. As there is 3 elements (0 , 1 , 2) in the adjacency list of 3 , so length is 3.
+4. As there is 2 elements (0 , 3) in the adjacency list of 2 , so length is 2
+The total sum is 10 and there are 5 edges in the undirected graph. So hence proved that sum of all adjacency list is equal to twice the no. of edges in the undirected graph.
+
+------
+![](images/4.png)<br>
+**Fig-b** <br>
+
+So know we know that the time complexity of bfs is O (E + V) .We know O(E) came from the inner most loop in the above code. But How does O(V) come and why are we adding it?
+There is corner case (fig-b), where a graph is given, which is completely disconnected and has 0 edges. Our task to apply bfs on every graph, even if there are no edges. In the code below, we are applying bfs on each graph , so that’s the reason we are adding O(V) to the time complexity of bfs.
+Hence the time complexity of bfs is O(V + E)
+
+```C++
+Main(){
+vector<int> vis(v + 1 , false);
+for(i = 0 to i = v - 1 ){
+  if(!vis[i]){
+     bfs( edges , i , vis);
+  }
+ }
+}
+		
+```
+
+
+
 
 
